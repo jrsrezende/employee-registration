@@ -6,8 +6,8 @@ Este projeto é uma aplicação simples em Java para cadastrar funcionários, co
 
 ## 🛠️ Tecnologias
 
-- Java ☕
-- Swing (JOptionPane) 🖥️
+- Java 
+- Swing (JOptionPane) 
 
 ## ⚙️ Como executar
 
