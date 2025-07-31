@@ -14,6 +14,7 @@ public class EmployeeRepository {
             writer.write(employee.getRegistration() + "\n");
             writer.write(employee.getSalary() + "\n");
             writer.close();
+            System.out.println("Arquivo gravado com sucesso!");
         } catch (Exception e) {
             System.out.println("Erro: " + e.getMessage());
         }
