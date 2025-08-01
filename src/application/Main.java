@@ -13,11 +13,14 @@ public class Main {
         String name = JOptionPane.showInputDialog("Digite o nome do funcionário.");
         String cpf = JOptionPane.showInputDialog("Digite o CPF do funcionário.");
         String registration = JOptionPane.showInputDialog("Digite a matrícula do funcionário.");
-        String salaryString = JOptionPane.showInputDialog("Digite o salário do funcionário.");
+        String salary = JOptionPane.showInputDialog("Digite o salário do funcionário.");
 
-        double salary = Double.parseDouble(salaryString);
-
-        var employee = new Employee(UUID.randomUUID(), name, cpf, registration, salary);
+        Employee employee = new Employee();
+        employee.setId(UUID.randomUUID());
+        employee.setName(name);
+        employee.setCpf(cpf);
+        employee.setRegistration(registration);
+        employee.setSalary(Double.parseDouble(salary));
 
         System.out.println("Dados do Funcionário:");
         System.out.println("ID: " + employee.getId());
