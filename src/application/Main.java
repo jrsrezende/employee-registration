@@ -15,12 +15,7 @@ public class Main {
         String registration = JOptionPane.showInputDialog("Digite a matrícula do funcionário.");
         String salary = JOptionPane.showInputDialog("Digite o salário do funcionário.");
 
-        Employee employee = new Employee();
-        employee.setId(UUID.randomUUID());
-        employee.setName(name);
-        employee.setCpf(cpf);
-        employee.setRegistration(registration);
-        employee.setSalary(Double.parseDouble(salary));
+        Employee employee = new Employee(UUID.randomUUID(), name, cpf, registration, Double.parseDouble(salary));
 
         System.out.println("Dados do Funcionário:");
         System.out.println("ID: " + employee.getId());

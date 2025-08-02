@@ -9,6 +9,17 @@ public class Employee {
     private String registration;
     private Double salary;
 
+    public Employee() {
+    }
+
+    public Employee(UUID id, String name, String cpf, String registration, Double salary) {
+        this.id = id;
+        this.name = name;
+        this.cpf = cpf;
+        this.registration = registration;
+        this.salary = salary;
+    }
+
     public UUID getId() {
         return id;
     }
