@@ -1,4 +1,4 @@
-# 👥 Employee Control
+# 👥 Employee Registration
 
 Este projeto permite o registro de funcionários e seus endereços, com persistência dos dados em um banco MySQL. O sistema segue o padrão de camadas para facilitar a manutenção e organização do código
 
